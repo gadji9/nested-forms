@@ -17,6 +17,7 @@ export const Group: FunctionComponent<{
   draggingToolItem: IToolItem | undefined;
   setDraggingToolItem: Dispatch<SetStateAction<IToolItem | undefined>>;
 }> = observer(({ children, group, draggingToolItem, setDraggingToolItem }) => {
+  //
   function onDrop(e: DragEvent<HTMLDivElement>) {
     e.stopPropagation();
     if (!draggingToolItem) {

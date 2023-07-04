@@ -7,6 +7,7 @@ import { useDragginToolItemContext } from "@/app/core/providers/dragging-tool-it
 import { useGenerate } from "../lib/generator";
 
 export const Editor: FunctionComponent = observer(() => {
+  //
   const generatedElements = useGenerate();
   const { draggingToolItem, setDraggingToolItem } = useDragginToolItemContext();
   function onDragOver(e: DragEvent<HTMLDivElement>) {
